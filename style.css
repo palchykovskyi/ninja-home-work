@@ -1,0 +1,136 @@
+body {
+    background-color: rgb(18, 18, 51);
+    color: white;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-item {
+    padding: 0 40px;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    margin: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-pic {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    font-size: 20px;
+}
+
+.main {
+    position: relative;
+    height: 550px;
+    text-align: center;
+}
+.big-photo {
+    height: 100%;
+    width: 100%;
+}
+
+.main-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-button {
+    padding: 5px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    color: orangered;
+    font-weight: 700;
+}
+
+.professional, .animators {
+    margin: 0px auto;
+    text-align: center;
+    width: 50%;
+}
+
+.professional h2, .animators h2{
+    color: orangered;
+    text-align: center;
+    font-size: 30px;
+}
+
+.professional-block, .animators-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+   padding: 0;
+}
+
+.block_card {
+    width: 240px;
+    font-size: 15px;
+}
+
+.block_card-photo {
+    width: 240px;
+}
+
+.block_card p {
+    text-align: left;
+}
+.principles {
+    margin-top: 40px;
+    position: relative;
+}
+
+
+.principles-animal {
+    text-align: center;
+    height: 420px;
+    width: 100%;
+}
+
+.principles-text {
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+}
+
+.principles-text h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.principles-text ul {
+    padding: 0;
+    font-size: 20px;
+}
+
+.principles-text li {
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+
+
+
+
+
