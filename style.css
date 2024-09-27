@@ -13,6 +13,9 @@ a {
 .menu-item {
     padding: 0 40px;
 }
+.menu-list a .menu-item:last-child {
+    padding-right: 0;
+}
 
 li {
     list-style: none;
@@ -39,13 +42,16 @@ header {
 
 .main {
     position: relative;
-    height: 550px;
     text-align: center;
+    background-image: url(./img/princess.jpg);
+    background-size: cover;
+    height: 550px;
 }
-.big-photo {
+
+/* .big-photo {
     height: 100%;
     width: 100%;
-}
+} */
 
 .main-info {
     position: absolute;
@@ -67,9 +73,11 @@ header {
     margin: 0px auto;
     text-align: center;
     width: 50%;
+
+    border: 2px solid pink;
 }
 
-.professional h2, .animators h2{
+.professional h2, .animators h2 {
     color: orangered;
     text-align: center;
     font-size: 30px;
@@ -79,16 +87,17 @@ header {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
-   padding: 0;
+    padding: 0;
+    border: 2px solid red;
 }
 
 .block_card {
-    width: 240px;
+    max-width: 220px;
     font-size: 15px;
 }
 
 .block_card-photo {
-    width: 240px;
+    max-width: 220px;
 }
 
 .block_card p {
@@ -97,14 +106,18 @@ header {
 .principles {
     margin-top: 40px;
     position: relative;
-}
-
-
-.principles-animal {
-    text-align: center;
+    background-image: url(./img/animalBig.jpg);
+    background-size: cover;
     height: 420px;
     width: 100%;
 }
+
+
+/* .principles-animal {
+    text-align: center;
+    height: 420px;
+    width: 100%;
+} */
 
 .principles-text {
     position: absolute;
@@ -130,8 +143,142 @@ header {
     font-size: 17px;
 }
 
+@media screen and (max-width: 1220px) {
+    header {
+        margin: 20px 10px;
+    }
 
+    .block_card {
+        max-width: 150px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .block_card:last-child {
+        margin-right: 0;
+    }
+    .block_card-photo {
+        max-width: 150px;
+    }
+    .block_card p {
+        text-align: center;
+    }
+    .principles {
+        text-align: center;
+        
+    }
+    .principles-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+}
 
+@media  screen and (max-width: 995px) {
+    .professional-block, .animators-list {
+        display: inline-block;
+    }
 
+    .block_card {
+        margin-right: 0;
+        margin-bottom: 50px;
+        padding: 0 25px;
+        max-width: 300px;
+    }
+    .block_card-photo {
+        max-width: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 825px) {
+    .menu-list {
+        font-size: 15px;
+    }
+
+    .menu-item {
+        padding: 0 15px;
+    }
+
+    .professional h2, .animators h2 {
+        font-size: 25px;
+    }
+
+    .professional-block, .animators-list {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .logo-pic {
+        width: 100px;
+    }
+
+    .menu-list {
+        font-size: 13px;
+    }
+
+    .professional h2, .animators h2 {
+        font-size: 20px;
+    }
+
+    .block_card {
+        max-width: 200px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    header {
+        margin: 0px 5px;
+    }
+    .logo-pic {
+        width: 70px;
+    }
+
+    .menu-list {
+        font-size: 12px;
+    }
+
+    .menu-item {
+        padding: 0 7px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .logo-pic {
+        width: 60px;
+    }
+
+    .menu-list {
+        font-size: 10px;
+    }
+
+    .main {
+        height: 450px;
+    }
+
+    .main-button {
+        font-size: 15px;
+    }
+
+    .professional h2, .animators h2 {
+        font-size: 17px;
+    }
+
+    .block_card-photo {
+        max-width: 150px;
+    }
+    .principles {
+        height: 350px;
+    }
+    .principles-text h3 {
+        font-size: 18px;
+    }
+
+    .principles-text li {
+        font-size: 16px;
+    }
+} - /* Адаптовано до 336px */
 
 
