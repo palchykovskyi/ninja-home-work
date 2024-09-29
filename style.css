@@ -13,7 +13,7 @@ a {
 .menu-item {
     padding: 0 40px;
 }
-.menu-list a .menu-item:last-child {
+.menu-item:last-child {
     padding-right: 0;
 }
 
@@ -73,8 +73,6 @@ header {
     margin: 0px auto;
     text-align: center;
     width: 50%;
-
-    border: 2px solid pink;
 }
 
 .professional h2, .animators h2 {
@@ -88,7 +86,6 @@ header {
     justify-content: space-between;
     margin-top: 30px;
     padding: 0;
-    border: 2px solid red;
 }
 
 .block_card {
@@ -215,11 +212,15 @@ header {
     }
 
     .menu-list {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    .menu-item {
+        padding: 0 10px;
     }
 
     .professional h2, .animators h2 {
-        font-size: 20px;
+        font-size: 20px;    
     }
 
     .block_card {
@@ -236,16 +237,12 @@ header {
         width: 70px;
     }
 
-    .menu-list {
-        font-size: 12px;
-    }
-
     .menu-item {
         padding: 0 7px;
     }
 }
 
-@media screen and (max-width: 407px) {
+@media screen and (max-width: 415px) {
     .logo-pic {
         width: 60px;
     }
@@ -279,6 +276,6 @@ header {
     .principles-text li {
         font-size: 16px;
     }
-} - /* Адаптовано до 336px */
+}  /* Адаптовано до 362px */
 
 
