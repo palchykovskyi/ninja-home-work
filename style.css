@@ -48,6 +48,10 @@ header {
     font-size: 20px;
 }
 
+.menu-burger-btn {
+    display: none;
+}
+
 .main-section {
     position: relative;
     text-align: center;
@@ -212,6 +216,85 @@ header {
     .professional-block, .animators-list {
         margin-top: 10px;
     }
+}
+
+@media screen and (max-width: 685px) {
+    .logo {
+        z-index: 51;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--main-background);
+        z-index: 50;
+
+        transform: translateY(-100%);
+    }
+    .menu-open{
+        transform: translateY(0);
+    }
+    .menu-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }
+    .menu-item{
+        padding: 20px 0;
+        text-decoration: underline;
+    }
+    .menu-item:hover{
+        font-size: 25px;
+    }
+
+
+    /*Burger start*/
+    .menu-burger-btn{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 30px;
+        margin-right: 10px;
+        background-color: transparent;
+        border: none;
+        z-index: 50;
+    }
+
+    .menu-burger-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+    }
+
+    .menu-burger-line:first-child {
+        top:0;
+    }
+    .menu-burger-line:nth-child(2) {
+        top: 15px
+    }
+    .menu-burger-line:nth-child(3) {
+        top: 15px;
+    }
+    .menu-burger-line:last-child{
+        top: 30px;
+    }
+
+    .menu .menu-open .menu-burger-line:first-child {
+        transform: scale(0);
+    }
+
+
+
+/*Burger end*/
 }
 
 @media screen and (max-width: 590px) {
